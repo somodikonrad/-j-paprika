@@ -63,7 +63,7 @@ h1{
 }
 
 li{
-    list-style: url(../images/chili-pepper-icon.gif);
+    list-style: url(../Images/chili-pepper-icon.gif);
     border: blue 1px solid;
     width: 250px;
     margin: 20px;
@@ -73,7 +73,7 @@ li{
 #menu{
     float: right;
   }
-  #fokeret{
+#fokeret{
     float: left;
   }
 
