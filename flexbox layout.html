@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox layout</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .container div{
+            border: solid 1px black;
+        }
+
+        .tartalom{
+            display: flex;
+            height: 70vh;
+        }
+
+
+        .nav {
+            background-color: gray;
+            height: 100vh;
+            order: -1;
+            flex-grow: 1;
+        }
+
+        .header {
+            flex-grow: 1;
+            background-color: lightgray;
+        }
+
+        .footer {
+            background-color: lightgray;
+            flex-grow: 1;
+
+        }
+
+        .aside {
+            background-color: blue;
+            flex-grow: 1;
+        }
+
+        .article {
+            background-color: lightskyblue;
+            color: white;
+            flex-grow: 5;
+
+        }
+        @media screen and (max-width: 500px) {
+            .tartalom{
+                display: flex;
+                flex-direction: column;
+            }
+            .container{
+                display: flex;
+                flex-wrap: nowrap;
+            }
+    
+}
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="nav">nav</div>
+        <div class="tartalom">
+            <div class="article">article</div>
+            <div class="aside">aside</div>
+        </div>
+        <div class="footer">footer</div>
+
+
+
+
+
+    </div>
+  </body>
+</html>
